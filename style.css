@@ -1,3 +1,149 @@
-h1 {
-    color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html {
+    background-color: black;
+    color: seashell;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.9;
+}
+
+/*Navigation*/
+
+nav {
+    z-index: 2;
+    background-color: rgba(0, 0 , 0, 0.9);
+    display: flex;
+    width: 100%;
+    height: 69px;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+}
+
+nav img {
+    height: 59px;
+    margin-left: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: underline;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav .link {
+    margin: 5px;
+}
+
+/*Mission*/
+
+.mission {
+    position: relative;
+    display: flex;
+    top: 70px;
+    margin: 0 auto;
+    background-image: url(./src/img-mission-background.webp);
+    background-size: cover;
+    height: 700px;
+    width: 1200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Tea of the Month (TOTM)*/
+.TOTM {
+    position: relative;
+    margin: 95px auto 0;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.TOTM .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.TOTM .gallery .tea-image {
+    margin-top: 10px;
+    height: 200px;
+    width: 300px;
+}
+
+.TOTM .gallery h4 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.TOTM h4 {
+    margin-top: 20px;
+}
+
+/*Locations*/
+
+.locations {
+    height: 500px;
+    width: 1200px;
+    margin: 95px auto 0;
+    background-image: url(./src/img-locations-background.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.locations .locations-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.locations .locations-container .location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    margin: 30px 40px;
+    background-color: black;
+    opacity: 1;
+}
+
+.locations .locations-container .location h4 {
+    margin-top: 20px;
+}
+
+/*Contact info*/
+
+.contact-info {
+    margin: auto;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+/*Footer*/
+
+footer h5 {
+    margin-left: 20px;
 }
